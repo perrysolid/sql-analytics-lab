@@ -1,7 +1,7 @@
 # Comprehensive Report: Automated Role Permission Testing for Apache Superset
 
 **Date:** 2026-03-03
-**Author:** Automated testing via Claude Code + Superset MCP + Playwright
+**Author:** Automated testing via AI Code + Superset MCP + Playwright
 **Superset Instance:** http://localhost:8088
 
 ---

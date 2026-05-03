@@ -104,6 +104,5 @@ def config_files(project_root):
     return {
         'docker_compose': project_root / 'docker-compose.yml',
         'superset_config': project_root / 'superset' / 'config' / 'superset_config.py',
-        'env_file': project_root / '.env',
-        'claude_md': project_root / 'CLAUDE.md'
+        'env_file': project_root / '.env'
     }
