@@ -1,0 +1,6 @@
+# Testing dependencies for SQL Playgrounds project
+pytest>=7.0.0
+pytest-cov>=4.0.0
+psycopg2-binary>=2.9.0
+pandas>=2.0.0
+requests>=2.28.0

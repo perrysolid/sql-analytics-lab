@@ -1,0 +1,998 @@
+{
+  "exported_at": "2026-03-05T10:00:00Z",
+  "superset_instance": "http://localhost:8088",
+  "scenario": "Option 2 \u2014 Admin-like dataset access for owner role",
+  "requires_custom_security_manager": true,
+  "note": "Requires CustomSecurityManager in superset_config.py to bypass dataset ownership checks. Datasource-specific permissions are project-specific.",
+  "roles": [
+    {
+      "id": 8,
+      "name": "OPT2_Sublime_Starter",
+      "permission_count": 72,
+      "permissions": [
+        {
+          "permission_view_id": 90,
+          "permission": "can_read",
+          "view_menu": "AdvancedDataType"
+        },
+        {
+          "permission_view_id": 147,
+          "permission": "can_query",
+          "view_menu": "Api"
+        },
+        {
+          "permission_view_id": 146,
+          "permission": "can_query_form_data",
+          "view_menu": "Api"
+        },
+        {
+          "permission_view_id": 148,
+          "permission": "can_time_range",
+          "view_menu": "Api"
+        },
+        {
+          "permission_view_id": 89,
+          "permission": "can_list",
+          "view_menu": "AsyncEventsRestApi"
+        },
+        {
+          "permission_view_id": 91,
+          "permission": "can_read",
+          "view_menu": "AvailableDomains"
+        },
+        {
+          "permission_view_id": 94,
+          "permission": "can_export",
+          "view_menu": "Chart"
+        },
+        {
+          "permission_view_id": 7,
+          "permission": "can_read",
+          "view_menu": "Chart"
+        },
+        {
+          "permission_view_id": 198,
+          "permission": "menu_access",
+          "view_menu": "Charts"
+        },
+        {
+          "permission_view_id": 98,
+          "permission": "can_read",
+          "view_menu": "CurrentUserRestApi"
+        },
+        {
+          "permission_view_id": 106,
+          "permission": "can_cache_dashboard_screenshot",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 220,
+          "permission": "can_drill",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 105,
+          "permission": "can_export",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 104,
+          "permission": "can_get_embedded",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 15,
+          "permission": "can_read",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 219,
+          "permission": "can_view_chart_as_table",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 218,
+          "permission": "can_view_query",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 100,
+          "permission": "can_read",
+          "view_menu": "DashboardFilterStateRestApi"
+        },
+        {
+          "permission_view_id": 101,
+          "permission": "can_write",
+          "view_menu": "DashboardFilterStateRestApi"
+        },
+        {
+          "permission_view_id": 102,
+          "permission": "can_read",
+          "view_menu": "DashboardPermalinkRestApi"
+        },
+        {
+          "permission_view_id": 103,
+          "permission": "can_write",
+          "view_menu": "DashboardPermalinkRestApi"
+        },
+        {
+          "permission_view_id": 197,
+          "permission": "menu_access",
+          "view_menu": "Dashboards"
+        },
+        {
+          "permission_view_id": 195,
+          "permission": "menu_access",
+          "view_menu": "Data"
+        },
+        {
+          "permission_view_id": 17,
+          "permission": "can_read",
+          "view_menu": "Database"
+        },
+        {
+          "permission_view_id": 196,
+          "permission": "menu_access",
+          "view_menu": "Databases"
+        },
+        {
+          "permission_view_id": 110,
+          "permission": "can_get_drill_info",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 11,
+          "permission": "can_read",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 199,
+          "permission": "menu_access",
+          "view_menu": "Datasets"
+        },
+        {
+          "permission_view_id": 152,
+          "permission": "can_external_metadata",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 149,
+          "permission": "can_external_metadata_by_name",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 150,
+          "permission": "can_get",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 116,
+          "permission": "can_read",
+          "view_menu": "EmbeddedDashboard"
+        },
+        {
+          "permission_view_id": 117,
+          "permission": "can_read",
+          "view_menu": "Explore"
+        },
+        {
+          "permission_view_id": 118,
+          "permission": "can_read",
+          "view_menu": "ExploreFormDataRestApi"
+        },
+        {
+          "permission_view_id": 119,
+          "permission": "can_write",
+          "view_menu": "ExploreFormDataRestApi"
+        },
+        {
+          "permission_view_id": 120,
+          "permission": "can_read",
+          "view_menu": "ExplorePermalinkRestApi"
+        },
+        {
+          "permission_view_id": 121,
+          "permission": "can_write",
+          "view_menu": "ExplorePermalinkRestApi"
+        },
+        {
+          "permission_view_id": 194,
+          "permission": "menu_access",
+          "view_menu": "Home"
+        },
+        {
+          "permission_view_id": 138,
+          "permission": "can_recent_activity",
+          "view_menu": "Log"
+        },
+        {
+          "permission_view_id": 88,
+          "permission": "can_get",
+          "view_menu": "MenuApi"
+        },
+        {
+          "permission_view_id": 86,
+          "permission": "can_get",
+          "view_menu": "OpenApi"
+        },
+        {
+          "permission_view_id": 31,
+          "permission": "can_this_form_get",
+          "view_menu": "ResetMyPasswordView"
+        },
+        {
+          "permission_view_id": 30,
+          "permission": "can_this_form_post",
+          "view_menu": "ResetMyPasswordView"
+        },
+        {
+          "permission_view_id": 186,
+          "permission": "can_read",
+          "view_menu": "RowLevelSecurity"
+        },
+        {
+          "permission_view_id": 154,
+          "permission": "can_list",
+          "view_menu": "SavedQuery"
+        },
+        {
+          "permission_view_id": 1,
+          "permission": "can_read",
+          "view_menu": "SavedQuery"
+        },
+        {
+          "permission_view_id": 184,
+          "permission": "can_read",
+          "view_menu": "SecurityRestApi"
+        },
+        {
+          "permission_view_id": 214,
+          "permission": "can_csv",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 158,
+          "permission": "can_dashboard",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 155,
+          "permission": "can_dashboard_permalink",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 160,
+          "permission": "can_explore",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 157,
+          "permission": "can_explore_json",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 164,
+          "permission": "can_fetch_datasource_metadata",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 161,
+          "permission": "can_language_pack",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 163,
+          "permission": "can_log",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 216,
+          "permission": "can_share_chart",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 215,
+          "permission": "can_share_dashboard",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 162,
+          "permission": "can_slice",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 127,
+          "permission": "can_read",
+          "view_menu": "Tag"
+        },
+        {
+          "permission_view_id": 176,
+          "permission": "can_tags",
+          "view_menu": "TagView"
+        },
+        {
+          "permission_view_id": 175,
+          "permission": "can_list",
+          "view_menu": "Tags"
+        },
+        {
+          "permission_view_id": 204,
+          "permission": "menu_access",
+          "view_menu": "Tags"
+        },
+        {
+          "permission_view_id": 95,
+          "permission": "can_read",
+          "view_menu": "Theme"
+        },
+        {
+          "permission_view_id": 38,
+          "permission": "can_userinfo",
+          "view_menu": "UserDBModelView"
+        },
+        {
+          "permission_view_id": 39,
+          "permission": "resetmypassword",
+          "view_menu": "UserDBModelView"
+        },
+        {
+          "permission_view_id": 234,
+          "permission": "datasource_access",
+          "view_menu": "[PostgreSQL].[daily_trip_summary](id:4)"
+        },
+        {
+          "permission_view_id": 233,
+          "permission": "datasource_access",
+          "view_menu": "[PostgreSQL].[payment_type_breakdown](id:3)"
+        },
+        {
+          "permission_view_id": 228,
+          "permission": "schema_access",
+          "view_menu": "[PostgreSQL].[playground].[nyc_taxi]"
+        },
+        {
+          "permission_view_id": 232,
+          "permission": "datasource_access",
+          "view_menu": "[PostgreSQL].[trips_by_borough](id:2)"
+        },
+        {
+          "permission_view_id": 231,
+          "permission": "datasource_access",
+          "view_menu": "[PostgreSQL].[trips_by_hour](id:1)"
+        },
+        {
+          "permission_view_id": 139,
+          "permission": "can_read",
+          "view_menu": "security"
+        },
+        {
+          "permission_view_id": 178,
+          "permission": "can_read",
+          "view_menu": "user"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "OPT2_Sublime_UserMgmt",
+      "permission_count": 123,
+      "permissions": [
+        {
+          "permission_view_id": 192,
+          "permission": "menu_access",
+          "view_menu": "Action Log"
+        },
+        {
+          "permission_view_id": 90,
+          "permission": "can_read",
+          "view_menu": "AdvancedDataType"
+        },
+        {
+          "permission_view_id": 147,
+          "permission": "can_query",
+          "view_menu": "Api"
+        },
+        {
+          "permission_view_id": 146,
+          "permission": "can_query_form_data",
+          "view_menu": "Api"
+        },
+        {
+          "permission_view_id": 148,
+          "permission": "can_time_range",
+          "view_menu": "Api"
+        },
+        {
+          "permission_view_id": 89,
+          "permission": "can_list",
+          "view_menu": "AsyncEventsRestApi"
+        },
+        {
+          "permission_view_id": 91,
+          "permission": "can_read",
+          "view_menu": "AvailableDomains"
+        },
+        {
+          "permission_view_id": 92,
+          "permission": "can_invalidate",
+          "view_menu": "CacheRestApi"
+        },
+        {
+          "permission_view_id": 94,
+          "permission": "can_export",
+          "view_menu": "Chart"
+        },
+        {
+          "permission_view_id": 7,
+          "permission": "can_read",
+          "view_menu": "Chart"
+        },
+        {
+          "permission_view_id": 221,
+          "permission": "can_tag",
+          "view_menu": "Chart"
+        },
+        {
+          "permission_view_id": 93,
+          "permission": "can_warm_up_cache",
+          "view_menu": "Chart"
+        },
+        {
+          "permission_view_id": 8,
+          "permission": "can_write",
+          "view_menu": "Chart"
+        },
+        {
+          "permission_view_id": 198,
+          "permission": "menu_access",
+          "view_menu": "Charts"
+        },
+        {
+          "permission_view_id": 98,
+          "permission": "can_read",
+          "view_menu": "CurrentUserRestApi"
+        },
+        {
+          "permission_view_id": 99,
+          "permission": "can_write",
+          "view_menu": "CurrentUserRestApi"
+        },
+        {
+          "permission_view_id": 106,
+          "permission": "can_cache_dashboard_screenshot",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 107,
+          "permission": "can_delete_embedded",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 220,
+          "permission": "can_drill",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 105,
+          "permission": "can_export",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 104,
+          "permission": "can_get_embedded",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 15,
+          "permission": "can_read",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 108,
+          "permission": "can_set_embedded",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 222,
+          "permission": "can_tag",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 219,
+          "permission": "can_view_chart_as_table",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 218,
+          "permission": "can_view_query",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 16,
+          "permission": "can_write",
+          "view_menu": "Dashboard"
+        },
+        {
+          "permission_view_id": 100,
+          "permission": "can_read",
+          "view_menu": "DashboardFilterStateRestApi"
+        },
+        {
+          "permission_view_id": 101,
+          "permission": "can_write",
+          "view_menu": "DashboardFilterStateRestApi"
+        },
+        {
+          "permission_view_id": 102,
+          "permission": "can_read",
+          "view_menu": "DashboardPermalinkRestApi"
+        },
+        {
+          "permission_view_id": 103,
+          "permission": "can_write",
+          "view_menu": "DashboardPermalinkRestApi"
+        },
+        {
+          "permission_view_id": 197,
+          "permission": "menu_access",
+          "view_menu": "Dashboards"
+        },
+        {
+          "permission_view_id": 195,
+          "permission": "menu_access",
+          "view_menu": "Data"
+        },
+        {
+          "permission_view_id": 17,
+          "permission": "can_read",
+          "view_menu": "Database"
+        },
+        {
+          "permission_view_id": 196,
+          "permission": "menu_access",
+          "view_menu": "Databases"
+        },
+        {
+          "permission_view_id": 113,
+          "permission": "can_duplicate",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 112,
+          "permission": "can_export",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 110,
+          "permission": "can_get_drill_info",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 114,
+          "permission": "can_get_or_create_dataset",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 11,
+          "permission": "can_read",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 111,
+          "permission": "can_warm_up_cache",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 12,
+          "permission": "can_write",
+          "view_menu": "Dataset"
+        },
+        {
+          "permission_view_id": 199,
+          "permission": "menu_access",
+          "view_menu": "Datasets"
+        },
+        {
+          "permission_view_id": 152,
+          "permission": "can_external_metadata",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 149,
+          "permission": "can_external_metadata_by_name",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 150,
+          "permission": "can_get",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 115,
+          "permission": "can_get_column_values",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 153,
+          "permission": "can_samples",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 151,
+          "permission": "can_save",
+          "view_menu": "Datasource"
+        },
+        {
+          "permission_view_id": 116,
+          "permission": "can_read",
+          "view_menu": "EmbeddedDashboard"
+        },
+        {
+          "permission_view_id": 117,
+          "permission": "can_read",
+          "view_menu": "Explore"
+        },
+        {
+          "permission_view_id": 118,
+          "permission": "can_read",
+          "view_menu": "ExploreFormDataRestApi"
+        },
+        {
+          "permission_view_id": 119,
+          "permission": "can_write",
+          "view_menu": "ExploreFormDataRestApi"
+        },
+        {
+          "permission_view_id": 120,
+          "permission": "can_read",
+          "view_menu": "ExplorePermalinkRestApi"
+        },
+        {
+          "permission_view_id": 121,
+          "permission": "can_write",
+          "view_menu": "ExplorePermalinkRestApi"
+        },
+        {
+          "permission_view_id": 194,
+          "permission": "menu_access",
+          "view_menu": "Home"
+        },
+        {
+          "permission_view_id": 13,
+          "permission": "can_read",
+          "view_menu": "Log"
+        },
+        {
+          "permission_view_id": 138,
+          "permission": "can_recent_activity",
+          "view_menu": "Log"
+        },
+        {
+          "permission_view_id": 88,
+          "permission": "can_get",
+          "view_menu": "MenuApi"
+        },
+        {
+          "permission_view_id": 86,
+          "permission": "can_get",
+          "view_menu": "OpenApi"
+        },
+        {
+          "permission_view_id": 210,
+          "permission": "menu_access",
+          "view_menu": "Query Search"
+        },
+        {
+          "permission_view_id": 31,
+          "permission": "can_this_form_get",
+          "view_menu": "ResetMyPasswordView"
+        },
+        {
+          "permission_view_id": 30,
+          "permission": "can_this_form_post",
+          "view_menu": "ResetMyPasswordView"
+        },
+        {
+          "permission_view_id": 186,
+          "permission": "can_read",
+          "view_menu": "RowLevelSecurity"
+        },
+        {
+          "permission_view_id": 208,
+          "permission": "menu_access",
+          "view_menu": "SQL Editor"
+        },
+        {
+          "permission_view_id": 207,
+          "permission": "menu_access",
+          "view_menu": "SQL Lab"
+        },
+        {
+          "permission_view_id": 134,
+          "permission": "can_estimate_query_cost",
+          "view_menu": "SQLLab"
+        },
+        {
+          "permission_view_id": 135,
+          "permission": "can_execute_sql_query",
+          "view_menu": "SQLLab"
+        },
+        {
+          "permission_view_id": 133,
+          "permission": "can_export_csv",
+          "view_menu": "SQLLab"
+        },
+        {
+          "permission_view_id": 132,
+          "permission": "can_format_sql",
+          "view_menu": "SQLLab"
+        },
+        {
+          "permission_view_id": 130,
+          "permission": "can_get_results",
+          "view_menu": "SQLLab"
+        },
+        {
+          "permission_view_id": 131,
+          "permission": "can_read",
+          "view_menu": "SQLLab"
+        },
+        {
+          "permission_view_id": 209,
+          "permission": "menu_access",
+          "view_menu": "Saved Queries"
+        },
+        {
+          "permission_view_id": 126,
+          "permission": "can_export",
+          "view_menu": "SavedQuery"
+        },
+        {
+          "permission_view_id": 154,
+          "permission": "can_list",
+          "view_menu": "SavedQuery"
+        },
+        {
+          "permission_view_id": 1,
+          "permission": "can_read",
+          "view_menu": "SavedQuery"
+        },
+        {
+          "permission_view_id": 2,
+          "permission": "can_write",
+          "view_menu": "SavedQuery"
+        },
+        {
+          "permission_view_id": 184,
+          "permission": "can_read",
+          "view_menu": "SecurityRestApi"
+        },
+        {
+          "permission_view_id": 136,
+          "permission": "can_read",
+          "view_menu": "SqlLabPermalinkRestApi"
+        },
+        {
+          "permission_view_id": 137,
+          "permission": "can_write",
+          "view_menu": "SqlLabPermalinkRestApi"
+        },
+        {
+          "permission_view_id": 214,
+          "permission": "can_csv",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 158,
+          "permission": "can_dashboard",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 155,
+          "permission": "can_dashboard_permalink",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 160,
+          "permission": "can_explore",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 157,
+          "permission": "can_explore_json",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 164,
+          "permission": "can_fetch_datasource_metadata",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 161,
+          "permission": "can_language_pack",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 163,
+          "permission": "can_log",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 216,
+          "permission": "can_share_chart",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 215,
+          "permission": "can_share_dashboard",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 162,
+          "permission": "can_slice",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 217,
+          "permission": "can_sqllab",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 159,
+          "permission": "can_sqllab_history",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 156,
+          "permission": "can_warm_up_cache",
+          "view_menu": "Superset"
+        },
+        {
+          "permission_view_id": 168,
+          "permission": "can_activate",
+          "view_menu": "TabStateView"
+        },
+        {
+          "permission_view_id": 173,
+          "permission": "can_delete",
+          "view_menu": "TabStateView"
+        },
+        {
+          "permission_view_id": 170,
+          "permission": "can_delete_query",
+          "view_menu": "TabStateView"
+        },
+        {
+          "permission_view_id": 169,
+          "permission": "can_get",
+          "view_menu": "TabStateView"
+        },
+        {
+          "permission_view_id": 172,
+          "permission": "can_post",
+          "view_menu": "TabStateView"
+        },
+        {
+          "permission_view_id": 171,
+          "permission": "can_put",
+          "view_menu": "TabStateView"
+        },
+        {
+          "permission_view_id": 165,
+          "permission": "can_delete",
+          "view_menu": "TableSchemaView"
+        },
+        {
+          "permission_view_id": 166,
+          "permission": "can_expanded",
+          "view_menu": "TableSchemaView"
+        },
+        {
+          "permission_view_id": 167,
+          "permission": "can_post",
+          "view_menu": "TableSchemaView"
+        },
+        {
+          "permission_view_id": 129,
+          "permission": "can_bulk_create",
+          "view_menu": "Tag"
+        },
+        {
+          "permission_view_id": 127,
+          "permission": "can_read",
+          "view_menu": "Tag"
+        },
+        {
+          "permission_view_id": 128,
+          "permission": "can_write",
+          "view_menu": "Tag"
+        },
+        {
+          "permission_view_id": 176,
+          "permission": "can_tags",
+          "view_menu": "TagView"
+        },
+        {
+          "permission_view_id": 175,
+          "permission": "can_list",
+          "view_menu": "Tags"
+        },
+        {
+          "permission_view_id": 204,
+          "permission": "menu_access",
+          "view_menu": "Tags"
+        },
+        {
+          "permission_view_id": 96,
+          "permission": "can_export",
+          "view_menu": "Theme"
+        },
+        {
+          "permission_view_id": 95,
+          "permission": "can_read",
+          "view_menu": "Theme"
+        },
+        {
+          "permission_view_id": 97,
+          "permission": "can_write",
+          "view_menu": "Theme"
+        },
+        {
+          "permission_view_id": 203,
+          "permission": "menu_access",
+          "view_menu": "Themes"
+        },
+        {
+          "permission_view_id": 38,
+          "permission": "can_userinfo",
+          "view_menu": "UserDBModelView"
+        },
+        {
+          "permission_view_id": 39,
+          "permission": "resetmypassword",
+          "view_menu": "UserDBModelView"
+        },
+        {
+          "permission_view_id": 234,
+          "permission": "datasource_access",
+          "view_menu": "[PostgreSQL].[daily_trip_summary](id:4)"
+        },
+        {
+          "permission_view_id": 233,
+          "permission": "datasource_access",
+          "view_menu": "[PostgreSQL].[payment_type_breakdown](id:3)"
+        },
+        {
+          "permission_view_id": 228,
+          "permission": "schema_access",
+          "view_menu": "[PostgreSQL].[playground].[nyc_taxi]"
+        },
+        {
+          "permission_view_id": 232,
+          "permission": "datasource_access",
+          "view_menu": "[PostgreSQL].[trips_by_borough](id:2)"
+        },
+        {
+          "permission_view_id": 231,
+          "permission": "datasource_access",
+          "view_menu": "[PostgreSQL].[trips_by_hour](id:1)"
+        },
+        {
+          "permission_view_id": 211,
+          "permission": "all_datasource_access",
+          "view_menu": "all_datasource_access"
+        },
+        {
+          "permission_view_id": 139,
+          "permission": "can_read",
+          "view_menu": "security"
+        },
+        {
+          "permission_view_id": 178,
+          "permission": "can_read",
+          "view_menu": "user"
+        }
+      ]
+    }
+  ]
+}

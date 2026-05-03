@@ -1,0 +1,371 @@
+- generic [ref=e8]:
+  - generic [ref=e11]:
+    - button "File" [ref=e12] [cursor=pointer]:
+      - text: File
+      - img [ref=e13]
+    - button "Object" [ref=e15] [cursor=pointer]:
+      - text: Object
+      - img [ref=e16]
+    - button "Tools" [ref=e18] [cursor=pointer]:
+      - text: Tools
+      - img [ref=e19]
+    - button "Help" [ref=e21] [cursor=pointer]:
+      - text: Help
+      - img [ref=e22]
+  - generic [ref=e24]:
+    - generic [ref=e25]:
+      - button "Default Workspace" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+      - button "Query Tool Workspace" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+      - button "PSQL Tool Workspace" [ref=e32] [cursor=pointer]:
+        - img [ref=e33]
+      - generic "Schema Diff Workspace" [ref=e35]:
+        - button [disabled]:
+          - img
+      - button "Preferences" [ref=e37] [cursor=pointer]:
+        - img [ref=e38]
+    - generic [ref=e42]:
+      - generic [ref=e44]:
+        - tablist [ref=e45]:
+          - tablist [ref=e46]:
+            - generic [ref=e49]:
+              - tab "Object Explorer" [selected]:
+                - tab "Object Explorer" [selected]:
+                  - generic "Object Explorer":
+                    - generic: Object Explorer
+            - group [ref=e52]:
+              - button "Filter Objects" [ref=e53] [cursor=pointer]:
+                - img [ref=e55]
+              - generic "Query Tool" [ref=e57]:
+                - button [disabled]:
+                  - img
+              - generic "All Rows" [ref=e58]:
+                - button [disabled]:
+                  - img
+              - generic "Filtered Rows..." [ref=e59]:
+                - button [disabled]:
+                  - img
+              - generic "Search Objects..." [ref=e60]:
+                - button [disabled]:
+                  - img
+              - generic "PSQL Tool" [ref=e61]:
+                - button [disabled]:
+                  - img
+        - tabpanel "Object Explorer" [ref=e64]:
+          - tabpanel [ref=e65]:
+            - generic [ref=e73]:
+              - generic [ref=e74]: 
+              - generic [ref=e77] [cursor=pointer]: Servers
+      - generic [ref=e80]:
+        - tablist [ref=e81]:
+          - tablist [ref=e82]:
+            - generic [ref=e84]:
+              - tab "Dashboard Close" [ref=e86] [cursor=pointer]:
+                - tab "Dashboard Close" [ref=e87]:
+                  - generic "Dashboard" [ref=e88]:
+                    - generic [ref=e89]: Dashboard
+                    - button "Close" [ref=e90]:
+                      - img [ref=e91]
+              - tab " playground/admin@playground* Close" [ref=e94] [cursor=pointer]:
+                - tab " playground/admin@playground* Close" [ref=e95]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e96]:
+                    - generic [ref=e97]: 
+                    - generic [ref=e98]: playground/admin@playground*
+                    - button "Close" [ref=e99]:
+                      - img [ref=e100]
+              - tab " playground/admin@playground* Close" [ref=e103] [cursor=pointer]:
+                - tab " playground/admin@playground* Close" [ref=e104]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e105]:
+                    - generic [ref=e106]: 
+                    - generic [ref=e107]: playground/admin@playground*
+                    - button "Close" [ref=e108]:
+                      - img [ref=e109]
+              - tab " playground/admin@playground* Close" [ref=e112] [cursor=pointer]:
+                - tab " playground/admin@playground* Close" [ref=e113]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e114]:
+                    - generic [ref=e115]: 
+                    - generic [ref=e116]: playground/admin@playground*
+                    - button "Close" [ref=e117]:
+                      - img [ref=e118]
+              - tab " playground/admin@playground* Close" [ref=e121] [cursor=pointer]:
+                - tab " playground/admin@playground* Close" [ref=e122]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e123]:
+                    - generic [ref=e124]: 
+                    - generic [ref=e125]: playground/admin@playground*
+                    - button "Close" [ref=e126]:
+                      - img [ref=e127]
+              - tab " playground/admin@playground* Close" [selected] [ref=e130]:
+                - tab " playground/admin@playground* Close" [selected] [ref=e131]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e132]:
+                    - generic [ref=e133]: 
+                    - generic [ref=e134]: playground/admin@playground*
+                    - button "Close" [ref=e135] [cursor=pointer]:
+                      - img [ref=e136]
+            - button "More" [ref=e142] [cursor=pointer]:
+              - img [ref=e143]
+        - tabpanel " playground/admin@playground* Close" [ref=e147]:
+          - tabpanel [ref=e148]
+    - generic:
+      - iframe
+      - iframe
+      - iframe
+      - iframe
+      - iframe [active] [ref=e151]:
+        - generic [ref=f5e3]:
+          - generic [ref=f5e5]:
+            - group [ref=f5e6]:
+              - button "The session is idle and there is no current transaction." [ref=f5e7] [cursor=pointer]:
+                - img [ref=f5e8]
+              - button "playground/admin@playground" [ref=f5e10] [cursor=pointer]:
+                - generic [ref=f5e11]:
+                  - generic [ref=f5e12]: playground/admin@playground
+                  - img [ref=f5e14]
+              - button "New query tool for current connection" [ref=f5e16] [cursor=pointer]:
+                - img [ref=f5e17]
+            - group [ref=f5e19]:
+              - button "Reset layout" [ref=f5e20] [cursor=pointer]:
+                - img [ref=f5e21]
+          - generic [ref=f5e23]:
+            - group [ref=f5e24]:
+              - button "Open File" [ref=f5e25] [cursor=pointer]:
+                - img [ref=f5e26]
+              - button "Open in a new tab" [ref=f5e28] [cursor=pointer]:
+                - img [ref=f5e29]
+            - group [ref=f5e31]:
+              - button "Save File" [ref=f5e32] [cursor=pointer]:
+                - img [ref=f5e33]
+              - button "File" [ref=f5e35] [cursor=pointer]:
+                - img [ref=f5e36]
+            - group [ref=f5e38]:
+              - button "Edit" [ref=f5e39] [cursor=pointer]:
+                - img [ref=f5e40]
+                - img [ref=f5e42]
+            - group [ref=f5e44]:
+              - generic "Sort/Filter" [ref=f5e45]:
+                - button [disabled]:
+                  - img
+              - generic "Filter options" [ref=f5e46]:
+                - button [disabled]:
+                  - img
+            - generic [ref=f5e47]:
+              - combobox [disabled] [ref=f5e48]:
+                - option "No limit" [selected]
+                - option "1000 rows"
+                - option "500 rows"
+                - option "100 rows"
+              - img
+              - group
+            - group [ref=f5e49]:
+              - generic "Cancel query" [ref=f5e50]:
+                - button [disabled]:
+                  - img
+              - button "Execute script" [ref=f5e51] [cursor=pointer]:
+                - img [ref=f5e52]
+              - button "Execute query" [ref=f5e54] [cursor=pointer]:
+                - img [ref=f5e55]
+              - button "Execute options" [ref=f5e58] [cursor=pointer]:
+                - img [ref=f5e59]
+            - group [ref=f5e61]:
+              - button "Explain" [ref=f5e62] [cursor=pointer]:
+                - img [ref=f5e63]
+              - button "Explain Analyze" [ref=f5e65] [cursor=pointer]:
+                - img [ref=f5e66]
+              - button "Explain Settings" [ref=f5e68] [cursor=pointer]:
+                - img [ref=f5e69]
+            - group [ref=f5e71]:
+              - generic "Commit" [ref=f5e72]:
+                - button [disabled]:
+                  - img
+              - generic "Rollback" [ref=f5e73]:
+                - button [disabled]:
+                  - img
+            - group [ref=f5e74]:
+              - button "Macros" [ref=f5e75] [cursor=pointer]:
+                - img [ref=f5e76]
+                - img [ref=f5e78]
+            - group [ref=f5e80]:
+              - button "Help" [ref=f5e81] [cursor=pointer]:
+                - img [ref=f5e82]
+          - generic: ❯
+          - generic [ref=f5e86]:
+            - generic [ref=f5e88]:
+              - tablist [ref=f5e89]:
+                - tablist [ref=f5e90]:
+                  - generic [ref=f5e92]:
+                    - tab "Query" [selected] [ref=f5e94]:
+                      - tab "Query" [selected] [ref=f5e95]:
+                        - generic "Query" [ref=f5e96]:
+                          - generic [ref=f5e97]: Query
+                    - tab "Query History" [ref=f5e99] [cursor=pointer]:
+                      - tab "Query History" [ref=f5e100]:
+                        - generic "Query History" [ref=f5e101]:
+                          - generic [ref=f5e102]: Query History
+                  - button "Maximise" [ref=f5e107] [cursor=pointer]:
+                    - img [ref=f5e108]
+              - tabpanel "Query" [ref=f5e113]:
+                - tabpanel [ref=f5e114]:
+                  - generic [ref=f5e119]:
+                    - generic [ref=f5e121]:
+                      - generic [ref=f5e122]: "1"
+                      - generic [ref=f5e123]: "2"
+                      - generic [ref=f5e124]: "3"
+                      - generic [ref=f5e125]: "4"
+                      - generic [ref=f5e126]: "5"
+                      - generic [ref=f5e127]: "6"
+                      - generic [ref=f5e128]: "7"
+                      - generic [ref=f5e129]: "8"
+                      - generic [ref=f5e130]: "9"
+                    - textbox [active] [ref=f5e132]:
+                      - generic [ref=f5e133]: SELECT
+                      - generic [ref=f5e134]: CASE WHEN day_of_week IN (0, 6) THEN 'Weekend' ELSE 'Weekday' END as day_type,
+                      - generic [ref=f5e135]: SUM(trip_count) as trip_count,
+                      - generic [ref=f5e136]: ROUND((SUM(total_distance) / SUM(trip_count))::numeric, 2) as avg_distance,
+                      - generic [ref=f5e137]: ROUND((SUM(total_amount) / SUM(trip_count))::numeric, 2) as avg_fare,
+                      - generic [ref=f5e138]: ROUND(SUM(total_amount)::numeric, 2) as total_revenue
+                      - generic [ref=f5e139]: FROM nyc_taxi.trip_hourly_summary
+                      - generic [ref=f5e140]: GROUP BY CASE WHEN day_of_week IN (0, 6) THEN 'Weekend' ELSE 'Weekday' END
+                      - generic [ref=f5e141]: ORDER BY trip_count DESC;
+            - generic [ref=f5e144]:
+              - tablist [ref=f5e145]:
+                - tablist [ref=f5e146]:
+                  - generic [ref=f5e148]:
+                    - tab "Data Output" [selected] [ref=f5e150]:
+                      - tab "Data Output" [selected] [ref=f5e151]:
+                        - generic "Data Output" [ref=f5e152]:
+                          - generic [ref=f5e153]: Data Output
+                    - tab "Messages" [ref=f5e155] [cursor=pointer]:
+                      - tab "Messages" [ref=f5e156]:
+                        - generic "Messages" [ref=f5e157]:
+                          - generic [ref=f5e158]: Messages
+                    - tab "Notifications" [ref=f5e160] [cursor=pointer]:
+                      - tab "Notifications" [ref=f5e161]:
+                        - generic "Notifications" [ref=f5e162]:
+                          - generic [ref=f5e163]: Notifications
+                  - button "Maximise" [ref=f5e168] [cursor=pointer]:
+                    - img [ref=f5e169]
+              - tabpanel "Data Output" [ref=f5e174]:
+                - tabpanel [ref=f5e175]:
+                  - generic [ref=f5e177]:
+                    - generic [ref=f5e178]:
+                      - generic [ref=f5e179]:
+                        - group [ref=f5e180]:
+                          - generic "Add row" [ref=f5e181]:
+                            - button [disabled]:
+                              - img
+                          - generic "Copy" [ref=f5e182]:
+                            - button [disabled]:
+                              - img
+                          - button "Copy options" [ref=f5e183] [cursor=pointer]:
+                            - img [ref=f5e184]
+                          - generic "Paste" [ref=f5e186]:
+                            - button [disabled]:
+                              - img
+                          - button "Paste options" [ref=f5e187] [cursor=pointer]:
+                            - img [ref=f5e188]
+                          - generic "Delete" [ref=f5e190]:
+                            - button [disabled]:
+                              - img
+                        - group [ref=f5e191]:
+                          - generic "Save Data Changes" [ref=f5e192]:
+                            - button [disabled]:
+                              - img
+                        - group [ref=f5e193]:
+                          - button "Save results to file" [ref=f5e194] [cursor=pointer]:
+                            - img [ref=f5e195]
+                        - group [ref=f5e197]:
+                          - button "Graph Visualiser" [ref=f5e198] [cursor=pointer]:
+                            - img [ref=f5e199]
+                        - group [ref=f5e201]:
+                          - button "SQL query of data" [ref=f5e202] [cursor=pointer]:
+                            - img [ref=f5e203]
+                      - generic [ref=f5e207]:
+                        - generic [ref=f5e208]: "Showing rows: 1 to 2"
+                        - group [ref=f5e209]:
+                          - button "Edit range" [ref=f5e210] [cursor=pointer]:
+                            - img [ref=f5e211]
+                        - group [ref=f5e213]:
+                          - generic "Show entire range" [ref=f5e214]:
+                            - button [disabled]:
+                              - img
+                        - generic [ref=f5e216]: "Page No:"
+                        - generic [ref=f5e217]:
+                          - textbox [ref=f5e218]: "1"
+                          - group
+                        - generic [ref=f5e219]: of 1
+                        - group [ref=f5e221]:
+                          - generic "First Page" [ref=f5e222]:
+                            - button [disabled]:
+                              - img
+                          - generic "Previous Page" [ref=f5e223]:
+                            - button [disabled]:
+                              - img
+                          - generic "Next Page" [ref=f5e224]:
+                            - button [disabled]:
+                              - img
+                          - generic "Last Page" [ref=f5e225]:
+                            - button [disabled]:
+                              - img
+                    - grid [ref=f5e227]:
+                      - row "day_type text trip_count numeric avg_distance numeric avg_fare numeric total_revenue numeric" [ref=f5e228]:
+                        - columnheader [ref=f5e229]
+                        - columnheader "day_type text" [ref=f5e231]:
+                          - generic [ref=f5e232]:
+                            - generic [ref=f5e233]:
+                              - text: day_type
+                              - text: text
+                            - img [ref=f5e235]
+                        - columnheader "trip_count numeric" [ref=f5e238]:
+                          - generic [ref=f5e239]:
+                            - generic [ref=f5e240]:
+                              - text: trip_count
+                              - text: numeric
+                            - img [ref=f5e242]
+                        - columnheader "avg_distance numeric" [ref=f5e245]:
+                          - generic [ref=f5e246]:
+                            - generic [ref=f5e247]:
+                              - text: avg_distance
+                              - text: numeric
+                            - img [ref=f5e249]
+                        - columnheader "avg_fare numeric" [ref=f5e252]:
+                          - generic [ref=f5e253]:
+                            - generic [ref=f5e254]:
+                              - text: avg_fare
+                              - text: numeric
+                            - img [ref=f5e256]
+                        - columnheader "total_revenue numeric" [ref=f5e259]:
+                          - generic [ref=f5e260]:
+                            - generic [ref=f5e261]:
+                              - text: total_revenue
+                              - text: numeric
+                            - img [ref=f5e263]
+                      - row "1 Weekday 18844821 5.56 27.52 518651622.64" [ref=f5e266]:
+                        - gridcell "1" [ref=f5e267]:
+                          - generic [ref=f5e268]: "1"
+                        - gridcell "Weekday" [ref=f5e269]
+                        - gridcell "18844821" [ref=f5e270]:
+                          - generic [ref=f5e271]: "18844821"
+                        - gridcell "5.56" [ref=f5e272]:
+                          - generic [ref=f5e273]: "5.56"
+                        - gridcell "27.52" [ref=f5e274]:
+                          - generic [ref=f5e275]: "27.52"
+                        - gridcell "518651622.64" [ref=f5e276]:
+                          - generic [ref=f5e277]: "518651622.64"
+                      - row "2 Weekend 7634744 5.86 26.18 199869778.31" [ref=f5e278]:
+                        - gridcell "2" [ref=f5e279]:
+                          - generic [ref=f5e280]: "2"
+                        - gridcell "Weekend" [ref=f5e281]
+                        - gridcell "7634744" [ref=f5e282]:
+                          - generic [ref=f5e283]: "7634744"
+                        - gridcell "5.86" [ref=f5e284]:
+                          - generic [ref=f5e285]: "5.86"
+                        - gridcell "26.18" [ref=f5e286]:
+                          - generic [ref=f5e287]: "26.18"
+                        - gridcell "199869778.31" [ref=f5e288]:
+                          - generic [ref=f5e289]: "199869778.31"
+          - generic [ref=f5e290]:
+            - generic [ref=f5e291]: "Total rows: 2"
+            - generic [ref=f5e292]: Query complete 00:00:00.048
+            - generic [ref=f5e293]:
+              - generic "Select EOL Sequence" [ref=f5e295] [cursor=pointer]: LF
+              - generic [ref=f5e296]: Ln 9, Col 26

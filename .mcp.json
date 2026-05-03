@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest",
+        "--api-key",
+        "ctx7sk-b2cccda6-5096-4388-b7c3-896ab5323073"
+      ],
+      "env": {}
+    },
+    "googlesheets": {
+      "type": "stdio",
+      "command": "/home/konradb/.local/bin/uvx",
+      "args": ["mcp-google-sheets@latest"],
+      "env": {
+        "SERVICE_ACCOUNT_PATH": "/home/konradb/airflow/dags/secrets/dev-service-account.json"
+      }
+    },
+    "superset-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "superset-mcp"],
+      "env": {
+        "SUPERSET_BASE_URL": "http://localhost:8088",
+        "SUPERSET_USERNAME": "admin",
+        "SUPERSET_PASSWORD": "admin123"
+      }
+    }
+  }
+}

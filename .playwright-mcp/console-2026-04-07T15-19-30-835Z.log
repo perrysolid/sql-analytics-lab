@@ -1,0 +1,4 @@
+[     792ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/browser/:0
+[     792ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/browser/:0
+[ 1310203ms] [ERROR] Blocked attempt to show multiple 'beforeunload' confirmation panels for a single navigation. @ http://localhost:8080/sqleditor/panel/7238869?is_query_tool=true&sgid=1&sid=1&did=16384&database_name=playground:0
+[ 1310204ms] [ERROR] Blocked attempt to show multiple 'beforeunload' confirmation panels for a single navigation. @ http://localhost:8080/sqleditor/panel/8244923?is_query_tool=true&sgid=1&sid=1&did=16384&database_name=playground:0

@@ -1,0 +1,633 @@
+- generic [ref=e8]:
+  - generic [ref=e11]:
+    - button "File" [ref=e12] [cursor=pointer]:
+      - text: File
+      - img [ref=e13]
+    - button "Object" [ref=e15] [cursor=pointer]:
+      - text: Object
+      - img [ref=e16]
+    - button "Tools" [ref=e18] [cursor=pointer]:
+      - text: Tools
+      - img [ref=e19]
+    - button "Help" [ref=e21] [cursor=pointer]:
+      - text: Help
+      - img [ref=e22]
+  - generic [ref=e24]:
+    - generic [ref=e25]:
+      - button "Default Workspace" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+      - button "Query Tool Workspace" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+      - button "PSQL Tool Workspace" [ref=e32] [cursor=pointer]:
+        - img [ref=e33]
+      - generic "Schema Diff Workspace" [ref=e35]:
+        - button [disabled]:
+          - img
+      - button "Preferences" [ref=e37] [cursor=pointer]:
+        - img [ref=e38]
+    - generic [ref=e42]:
+      - generic [ref=e44]:
+        - tablist [ref=e45]:
+          - tablist [ref=e46]:
+            - generic [ref=e49]:
+              - tab "Object Explorer" [selected]:
+                - tab "Object Explorer" [selected]:
+                  - generic "Object Explorer":
+                    - generic: Object Explorer
+            - group [ref=e52]:
+              - button "Filter Objects" [ref=e53] [cursor=pointer]:
+                - img [ref=e55]
+              - generic "Query Tool" [ref=e57]:
+                - button [disabled]:
+                  - img
+              - generic "All Rows" [ref=e58]:
+                - button [disabled]:
+                  - img
+              - generic "Filtered Rows..." [ref=e59]:
+                - button [disabled]:
+                  - img
+              - generic "Search Objects..." [ref=e60]:
+                - button [disabled]:
+                  - img
+              - generic "PSQL Tool" [ref=e61]:
+                - button [disabled]:
+                  - img
+        - tabpanel "Object Explorer" [ref=e64]:
+          - tabpanel [ref=e65]:
+            - generic [ref=e73]:
+              - generic [ref=e74]: 
+              - generic [ref=e77] [cursor=pointer]: Servers
+      - generic [ref=e80]:
+        - tablist [ref=e81]:
+          - tablist [ref=e82]:
+            - generic [ref=e84]:
+              - tab "Dashboard Close" [ref=e86] [cursor=pointer]:
+                - tab "Dashboard Close" [ref=e87]:
+                  - generic "Dashboard" [ref=e88]:
+                    - generic [ref=e89]: Dashboard
+                    - button "Close" [ref=e90]:
+                      - img [ref=e91]
+              - tab " playground/admin@playground* Close" [ref=e94] [cursor=pointer]:
+                - tab " playground/admin@playground* Close" [ref=e95]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e96]:
+                    - generic [ref=e97]: 
+                    - generic [ref=e98]: playground/admin@playground*
+                    - button "Close" [ref=e99]:
+                      - img [ref=e100]
+              - tab " playground/admin@playground* Close" [ref=e103] [cursor=pointer]:
+                - tab " playground/admin@playground* Close" [ref=e104]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e105]:
+                    - generic [ref=e106]: 
+                    - generic [ref=e107]: playground/admin@playground*
+                    - button "Close" [ref=e108]:
+                      - img [ref=e109]
+              - tab " playground/admin@playground* Close" [ref=e112] [cursor=pointer]:
+                - tab " playground/admin@playground* Close" [ref=e113]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e114]:
+                    - generic [ref=e115]: 
+                    - generic [ref=e116]: playground/admin@playground*
+                    - button "Close" [ref=e117]:
+                      - img [ref=e118]
+              - tab " playground/admin@playground* Close" [ref=e121] [cursor=pointer]:
+                - tab " playground/admin@playground* Close" [ref=e122]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e123]:
+                    - generic [ref=e124]: 
+                    - generic [ref=e125]: playground/admin@playground*
+                    - button "Close" [ref=e126]:
+                      - img [ref=e127]
+              - tab " playground/admin@playground* Close" [selected] [ref=e130]:
+                - tab " playground/admin@playground* Close" [selected] [ref=e131]:
+                  - generic "Query Tool - playground/admin@playground*" [ref=e132]:
+                    - generic [ref=e133]: 
+                    - generic [ref=e134]: playground/admin@playground*
+                    - button "Close" [ref=e135] [cursor=pointer]:
+                      - img [ref=e136]
+            - button "More" [ref=e142] [cursor=pointer]:
+              - img [ref=e143]
+        - tabpanel " playground/admin@playground* Close" [ref=e147]:
+          - tabpanel [ref=e148]
+    - generic:
+      - iframe
+      - iframe
+      - iframe
+      - iframe
+      - iframe [active] [ref=e151]:
+        - generic [ref=f5e3]:
+          - generic [ref=f5e5]:
+            - group [ref=f5e6]:
+              - button "The session is idle and there is no current transaction." [ref=f5e334] [cursor=pointer]:
+                - img [ref=f5e335]
+              - button "playground/admin@playground" [ref=f5e10] [cursor=pointer]:
+                - generic [ref=f5e11]:
+                  - generic [ref=f5e12]: playground/admin@playground
+                  - img [ref=f5e14]
+              - button "New query tool for current connection" [ref=f5e16] [cursor=pointer]:
+                - img [ref=f5e17]
+            - group [ref=f5e19]:
+              - button "Reset layout" [ref=f5e20] [cursor=pointer]:
+                - img [ref=f5e21]
+          - generic [ref=f5e23]:
+            - group [ref=f5e24]:
+              - button "Open File" [ref=f5e25] [cursor=pointer]:
+                - img [ref=f5e26]
+              - button "Open in a new tab" [ref=f5e28] [cursor=pointer]:
+                - img [ref=f5e29]
+            - group [ref=f5e31]:
+              - button "Save File" [ref=f5e32] [cursor=pointer]:
+                - img [ref=f5e33]
+              - button "File" [ref=f5e35] [cursor=pointer]:
+                - img [ref=f5e36]
+            - group [ref=f5e38]:
+              - button "Edit" [ref=f5e39] [cursor=pointer]:
+                - img [ref=f5e40]
+                - img [ref=f5e42]
+            - group [ref=f5e44]:
+              - generic "Sort/Filter" [ref=f5e45]:
+                - button [disabled]:
+                  - img
+              - generic "Filter options" [ref=f5e46]:
+                - button [disabled]:
+                  - img
+            - generic [ref=f5e47]:
+              - combobox [disabled] [ref=f5e48]:
+                - option "No limit" [selected]
+                - option "1000 rows"
+                - option "500 rows"
+                - option "100 rows"
+              - img
+              - group
+            - group [ref=f5e49]:
+              - generic "Cancel query" [ref=f5e337]:
+                - button [disabled]:
+                  - img
+              - button "Execute script" [ref=f5e685] [cursor=pointer]:
+                - img [ref=f5e339]
+              - button "Execute query" [ref=f5e341] [cursor=pointer]:
+                - img [ref=f5e342]
+              - button "Execute options" [ref=f5e58] [cursor=pointer]:
+                - img [ref=f5e59]
+            - group [ref=f5e61]:
+              - button "Explain" [ref=f5e345] [cursor=pointer]:
+                - img [ref=f5e346]
+              - button "Explain Analyze" [ref=f5e348] [cursor=pointer]:
+                - img [ref=f5e349]
+              - button "Explain Settings" [ref=f5e68] [cursor=pointer]:
+                - img [ref=f5e69]
+            - group [ref=f5e71]:
+              - generic "Commit" [ref=f5e72]:
+                - button [disabled]:
+                  - img
+              - generic "Rollback" [ref=f5e73]:
+                - button [disabled]:
+                  - img
+            - group [ref=f5e74]:
+              - button "Macros" [ref=f5e75] [cursor=pointer]:
+                - img [ref=f5e76]
+                - img [ref=f5e78]
+            - group [ref=f5e80]:
+              - button "Help" [ref=f5e81] [cursor=pointer]:
+                - img [ref=f5e82]
+          - generic: ❯
+          - generic [ref=f5e86]:
+            - generic [ref=f5e88]:
+              - tablist [ref=f5e89]:
+                - tablist [ref=f5e90]:
+                  - generic [ref=f5e92]:
+                    - tab "Query" [selected] [ref=f5e94]:
+                      - tab "Query" [selected] [ref=f5e95]:
+                        - generic "Query" [ref=f5e96]:
+                          - generic [ref=f5e97]: Query
+                    - tab "Query History" [ref=f5e99] [cursor=pointer]:
+                      - tab "Query History" [ref=f5e100]:
+                        - generic "Query History" [ref=f5e101]:
+                          - generic [ref=f5e102]: Query History
+                  - button "Maximise" [ref=f5e107] [cursor=pointer]:
+                    - img [ref=f5e108]
+              - tabpanel "Query" [ref=f5e113]:
+                - tabpanel [ref=f5e114]:
+                  - generic [ref=f5e119]:
+                    - generic [ref=f5e121]:
+                      - generic [ref=f5e122]: "1"
+                      - generic [ref=f5e123]: "2"
+                      - generic [ref=f5e124]: "3"
+                      - generic [ref=f5e125]: "4"
+                      - generic [ref=f5e126]: "5"
+                      - generic [ref=f5e127]: "6"
+                      - generic [ref=f5e128]: "7"
+                      - generic [ref=f5e129]: "8"
+                      - generic [ref=f5e130]: "9"
+                      - generic [ref=f5e300]: "10"
+                      - generic [ref=f5e301]: "11"
+                      - generic [ref=f5e302]: "12"
+                      - generic [ref=f5e303]: "13"
+                      - generic [ref=f5e304]: "14"
+                    - textbox [active] [ref=f5e132]:
+                      - generic [ref=f5e133]: SELECT h.hour, h.trips, h.avg_distance, h.avg_fare, b.pickup_boroughs
+                      - generic [ref=f5e305]: FROM (
+                      - generic [ref=f5e306]: SELECT EXTRACT(HOUR FROM tpep_pickup_datetime) as hour,
+                      - generic [ref=f5e307]: COUNT(*) as trips,
+                      - generic [ref=f5e308]: ROUND(AVG(trip_distance), 2) as avg_distance,
+                      - generic [ref=f5e309]: ROUND(AVG(total_amount), 2) as avg_fare
+                      - generic [ref=f5e310]: FROM nyc_taxi.yellow_taxi_trips
+                      - generic [ref=f5e311]: GROUP BY 1
+                      - generic [ref=f5e312]: ) h
+                      - generic [ref=f5e313]: CROSS JOIN LATERAL (
+                      - generic [ref=f5e314]: SELECT STRING_AGG(DISTINCT tz.borough, ', ') as pickup_boroughs
+                      - generic [ref=f5e315]: FROM nyc_taxi.taxi_zone_lookup tz
+                      - generic [ref=f5e316]: ) b
+                      - generic [ref=f5e317]: ORDER BY h.hour;
+            - generic [ref=f5e144]:
+              - tablist [ref=f5e145]:
+                - tablist [ref=f5e146]:
+                  - generic [ref=f5e148]:
+                    - tab "Data Output" [selected] [ref=f5e150]:
+                      - tab "Data Output" [selected] [ref=f5e151]:
+                        - generic "Data Output" [ref=f5e152]:
+                          - generic [ref=f5e153]: Data Output
+                    - tab "Messages" [ref=f5e155] [cursor=pointer]:
+                      - tab "Messages" [ref=f5e156]:
+                        - generic "Messages" [ref=f5e157]:
+                          - generic [ref=f5e158]: Messages
+                    - tab "Notifications" [ref=f5e160] [cursor=pointer]:
+                      - tab "Notifications" [ref=f5e161]:
+                        - generic "Notifications" [ref=f5e162]:
+                          - generic [ref=f5e163]: Notifications
+                  - button "Maximise" [ref=f5e168] [cursor=pointer]:
+                    - img [ref=f5e169]
+              - tabpanel "Data Output" [ref=f5e174]:
+                - tabpanel [ref=f5e175]:
+                  - generic [ref=f5e177]:
+                    - generic [ref=f5e178]:
+                      - generic [ref=f5e179]:
+                        - group [ref=f5e180]:
+                          - generic "Add row" [ref=f5e181]:
+                            - button [disabled]:
+                              - img
+                          - generic "Copy" [ref=f5e182]:
+                            - button [disabled]:
+                              - img
+                          - button "Copy options" [ref=f5e183] [cursor=pointer]:
+                            - img [ref=f5e184]
+                          - generic "Paste" [ref=f5e186]:
+                            - button [disabled]:
+                              - img
+                          - button "Paste options" [ref=f5e187] [cursor=pointer]:
+                            - img [ref=f5e188]
+                          - generic "Delete" [ref=f5e190]:
+                            - button [disabled]:
+                              - img
+                        - group [ref=f5e191]:
+                          - generic "Save Data Changes" [ref=f5e192]:
+                            - button [disabled]:
+                              - img
+                        - group [ref=f5e193]:
+                          - button "Save results to file" [ref=f5e194] [cursor=pointer]:
+                            - img [ref=f5e195]
+                        - group [ref=f5e197]:
+                          - button "Graph Visualiser" [ref=f5e198] [cursor=pointer]:
+                            - img [ref=f5e199]
+                        - group [ref=f5e201]:
+                          - button "SQL query of data" [ref=f5e202] [cursor=pointer]:
+                            - img [ref=f5e203]
+                      - generic [ref=f5e351]:
+                        - generic [ref=f5e352]: "Showing rows: 1 to 24"
+                        - group [ref=f5e353]:
+                          - button "Edit range" [ref=f5e354] [cursor=pointer]:
+                            - img [ref=f5e355]
+                        - group [ref=f5e357]:
+                          - generic "Show entire range" [ref=f5e358]:
+                            - button [disabled]:
+                              - img
+                        - generic [ref=f5e360]: "Page No:"
+                        - generic [ref=f5e361]:
+                          - textbox [ref=f5e362]: "1"
+                          - group
+                        - generic [ref=f5e363]: of 1
+                        - group [ref=f5e365]:
+                          - generic "First Page" [ref=f5e366]:
+                            - button [disabled]:
+                              - img
+                          - generic "Previous Page" [ref=f5e367]:
+                            - button [disabled]:
+                              - img
+                          - generic "Next Page" [ref=f5e368]:
+                            - button [disabled]:
+                              - img
+                          - generic "Last Page" [ref=f5e369]:
+                            - button [disabled]:
+                              - img
+                    - grid [ref=f5e370]:
+                      - row "hour numeric trips bigint avg_distance numeric avg_fare numeric pickup_boroughs text" [ref=f5e371]:
+                        - columnheader [ref=f5e372]
+                        - columnheader "hour numeric" [ref=f5e374]:
+                          - generic [ref=f5e375]:
+                            - generic [ref=f5e376]:
+                              - text: hour
+                              - text: numeric
+                            - img [ref=f5e378]
+                        - columnheader "trips bigint" [ref=f5e381]:
+                          - generic [ref=f5e382]:
+                            - generic [ref=f5e383]:
+                              - text: trips
+                              - text: bigint
+                            - img [ref=f5e385]
+                        - columnheader "avg_distance numeric" [ref=f5e388]:
+                          - generic [ref=f5e389]:
+                            - generic [ref=f5e390]:
+                              - text: avg_distance
+                              - text: numeric
+                            - img [ref=f5e392]
+                        - columnheader "avg_fare numeric" [ref=f5e395]:
+                          - generic [ref=f5e396]:
+                            - generic [ref=f5e397]:
+                              - text: avg_fare
+                              - text: numeric
+                            - img [ref=f5e399]
+                        - columnheader "pickup_boroughs text" [ref=f5e402]:
+                          - generic [ref=f5e403]:
+                            - generic [ref=f5e404]:
+                              - text: pickup_boroughs
+                              - text: text
+                            - img [ref=f5e406]
+                      - row "1 0 1048517 5.71 26.42 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e409]:
+                        - gridcell "1" [ref=f5e410]:
+                          - generic [ref=f5e411]: "1"
+                        - gridcell "0" [ref=f5e412]:
+                          - generic [ref=f5e413]: "0"
+                        - gridcell "1048517" [ref=f5e414]:
+                          - generic [ref=f5e415]: "1048517"
+                        - gridcell "5.71" [ref=f5e416]:
+                          - generic [ref=f5e417]: "5.71"
+                        - gridcell "26.42" [ref=f5e418]:
+                          - generic [ref=f5e419]: "26.42"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e420]
+                      - row "2 1 681893 4.74 24.23 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e421]:
+                        - gridcell "2" [ref=f5e422]:
+                          - generic [ref=f5e423]: "2"
+                        - gridcell "1" [ref=f5e424]:
+                          - generic [ref=f5e425]: "1"
+                        - gridcell "681893" [ref=f5e426]:
+                          - generic [ref=f5e427]: "681893"
+                        - gridcell "4.74" [ref=f5e428]:
+                          - generic [ref=f5e429]: "4.74"
+                        - gridcell "24.23" [ref=f5e430]:
+                          - generic [ref=f5e431]: "24.23"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e432]
+                      - row "3 2 440741 4.64 22.86 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e433]:
+                        - gridcell "3" [ref=f5e434]:
+                          - generic [ref=f5e435]: "3"
+                        - gridcell "2" [ref=f5e436]:
+                          - generic [ref=f5e437]: "2"
+                        - gridcell "440741" [ref=f5e438]:
+                          - generic [ref=f5e439]: "440741"
+                        - gridcell "4.64" [ref=f5e440]:
+                          - generic [ref=f5e441]: "4.64"
+                        - gridcell "22.86" [ref=f5e442]:
+                          - generic [ref=f5e443]: "22.86"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e444]
+                      - row "4 3 294943 6.55 23.72 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e445]:
+                        - gridcell "4" [ref=f5e446]:
+                          - generic [ref=f5e447]: "4"
+                        - gridcell "3" [ref=f5e448]:
+                          - generic [ref=f5e449]: "3"
+                        - gridcell "294943" [ref=f5e450]:
+                          - generic [ref=f5e451]: "294943"
+                        - gridcell "6.55" [ref=f5e452]:
+                          - generic [ref=f5e453]: "6.55"
+                        - gridcell "23.72" [ref=f5e454]:
+                          - generic [ref=f5e455]: "23.72"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e456]
+                      - row "5 4 223635 12.83 29.39 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e457]:
+                        - gridcell "5" [ref=f5e458]:
+                          - generic [ref=f5e459]: "5"
+                        - gridcell "4" [ref=f5e460]:
+                          - generic [ref=f5e461]: "4"
+                        - gridcell "223635" [ref=f5e462]:
+                          - generic [ref=f5e463]: "223635"
+                        - gridcell "12.83" [ref=f5e464]:
+                          - generic [ref=f5e465]: "12.83"
+                        - gridcell "29.39" [ref=f5e466]:
+                          - generic [ref=f5e467]: "29.39"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e468]
+                      - row "6 5 244115 32.22 33.51 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e469]:
+                        - gridcell "6" [ref=f5e470]:
+                          - generic [ref=f5e471]: "6"
+                        - gridcell "5" [ref=f5e472]:
+                          - generic [ref=f5e473]: "5"
+                        - gridcell "244115" [ref=f5e474]:
+                          - generic [ref=f5e475]: "244115"
+                        - gridcell "32.22" [ref=f5e476]:
+                          - generic [ref=f5e477]: "32.22"
+                        - gridcell "33.51" [ref=f5e478]:
+                          - generic [ref=f5e479]: "33.51"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e480]
+                      - row "7 6 507654 18.28 28.54 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e481]:
+                        - gridcell "7" [ref=f5e482]:
+                          - generic [ref=f5e483]: "7"
+                        - gridcell "6" [ref=f5e484]:
+                          - generic [ref=f5e485]: "6"
+                        - gridcell "507654" [ref=f5e486]:
+                          - generic [ref=f5e487]: "507654"
+                        - gridcell "18.28" [ref=f5e488]:
+                          - generic [ref=f5e489]: "18.28"
+                        - gridcell "28.54" [ref=f5e490]:
+                          - generic [ref=f5e491]: "28.54"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e492]
+                      - row "8 7 986081 14.21 26.17 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e493]:
+                        - gridcell "8" [ref=f5e494]:
+                          - generic [ref=f5e495]: "8"
+                        - gridcell "7" [ref=f5e496]:
+                          - generic [ref=f5e497]: "7"
+                        - gridcell "986081" [ref=f5e498]:
+                          - generic [ref=f5e499]: "986081"
+                        - gridcell "14.21" [ref=f5e500]:
+                          - generic [ref=f5e501]: "14.21"
+                        - gridcell "26.17" [ref=f5e502]:
+                          - generic [ref=f5e503]: "26.17"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e504]
+                      - row "9 8 1333430 9.55 25.30 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e505]:
+                        - gridcell "9" [ref=f5e506]:
+                          - generic [ref=f5e507]: "9"
+                        - gridcell "8" [ref=f5e508]:
+                          - generic [ref=f5e509]: "8"
+                        - gridcell "1333430" [ref=f5e510]:
+                          - generic [ref=f5e511]: "1333430"
+                        - gridcell "9.55" [ref=f5e512]:
+                          - generic [ref=f5e513]: "9.55"
+                        - gridcell "25.30" [ref=f5e514]:
+                          - generic [ref=f5e515]: "25.30"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e516]
+                      - row "10 9 1418723 6.16 25.40 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e517]:
+                        - gridcell "10" [ref=f5e518]:
+                          - generic [ref=f5e519]: "10"
+                        - gridcell "9" [ref=f5e520]:
+                          - generic [ref=f5e521]: "9"
+                        - gridcell "1418723" [ref=f5e522]:
+                          - generic [ref=f5e523]: "1418723"
+                        - gridcell "6.16" [ref=f5e524]:
+                          - generic [ref=f5e525]: "6.16"
+                        - gridcell "25.40" [ref=f5e526]:
+                          - generic [ref=f5e527]: "25.40"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e528]
+                      - row "11 10 1495253 5.24 25.93 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e529]:
+                        - gridcell "11" [ref=f5e530]:
+                          - generic [ref=f5e531]: "11"
+                        - gridcell "10" [ref=f5e532]:
+                          - generic [ref=f5e533]: "10"
+                        - gridcell "1495253" [ref=f5e534]:
+                          - generic [ref=f5e535]: "1495253"
+                        - gridcell "5.24" [ref=f5e536]:
+                          - generic [ref=f5e537]: "5.24"
+                        - gridcell "25.93" [ref=f5e538]:
+                          - generic [ref=f5e539]: "25.93"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e540]
+                      - row "12 11 1609900 4.78 26.28 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e541]:
+                        - gridcell "12" [ref=f5e542]:
+                          - generic [ref=f5e543]: "12"
+                        - gridcell "11" [ref=f5e544]:
+                          - generic [ref=f5e545]: "11"
+                        - gridcell "1609900" [ref=f5e546]:
+                          - generic [ref=f5e547]: "1609900"
+                        - gridcell "4.78" [ref=f5e548]:
+                          - generic [ref=f5e549]: "4.78"
+                        - gridcell "26.28" [ref=f5e550]:
+                          - generic [ref=f5e551]: "26.28"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e552]
+                      - row "13 12 1756504 4.63 27.28 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e553]:
+                        - gridcell "13" [ref=f5e554]:
+                          - generic [ref=f5e555]: "13"
+                        - gridcell "12" [ref=f5e556]:
+                          - generic [ref=f5e557]: "12"
+                        - gridcell "1756504" [ref=f5e558]:
+                          - generic [ref=f5e559]: "1756504"
+                        - gridcell "4.63" [ref=f5e560]:
+                          - generic [ref=f5e561]: "4.63"
+                        - gridcell "27.28" [ref=f5e562]:
+                          - generic [ref=f5e563]: "27.28"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e564]
+                      - row "14 13 1837786 4.52 27.49 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e565]:
+                        - gridcell "14" [ref=f5e566]:
+                          - generic [ref=f5e567]: "14"
+                        - gridcell "13" [ref=f5e568]:
+                          - generic [ref=f5e569]: "13"
+                        - gridcell "1837786" [ref=f5e570]:
+                          - generic [ref=f5e571]: "1837786"
+                        - gridcell "4.52" [ref=f5e572]:
+                          - generic [ref=f5e573]: "4.52"
+                        - gridcell "27.49" [ref=f5e574]:
+                          - generic [ref=f5e575]: "27.49"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e576]
+                      - row "15 14 1982582 6.48 28.50 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e577]:
+                        - gridcell "15" [ref=f5e578]:
+                          - generic [ref=f5e579]: "15"
+                        - gridcell "14" [ref=f5e580]:
+                          - generic [ref=f5e581]: "14"
+                        - gridcell "1982582" [ref=f5e582]:
+                          - generic [ref=f5e583]: "1982582"
+                        - gridcell "6.48" [ref=f5e584]:
+                          - generic [ref=f5e585]: "6.48"
+                        - gridcell "28.50" [ref=f5e586]:
+                          - generic [ref=f5e587]: "28.50"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e588]
+                      - row "16 15 2077944 5.63 28.43 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e589]:
+                        - gridcell "16" [ref=f5e590]:
+                          - generic [ref=f5e591]: "16"
+                        - gridcell "15" [ref=f5e592]:
+                          - generic [ref=f5e593]: "15"
+                        - gridcell "2077944" [ref=f5e594]:
+                          - generic [ref=f5e595]: "2077944"
+                        - gridcell "5.63" [ref=f5e596]:
+                          - generic [ref=f5e597]: "5.63"
+                        - gridcell "28.43" [ref=f5e598]:
+                          - generic [ref=f5e599]: "28.43"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e600]
+                      - row "17 16 2138242 5.05 30.13 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e601]:
+                        - gridcell "17" [ref=f5e602]:
+                          - generic [ref=f5e603]: "17"
+                        - gridcell "16" [ref=f5e604]:
+                          - generic [ref=f5e605]: "16"
+                        - gridcell "2138242" [ref=f5e606]:
+                          - generic [ref=f5e607]: "2138242"
+                        - gridcell "5.05" [ref=f5e608]:
+                          - generic [ref=f5e609]: "5.05"
+                        - gridcell "30.13" [ref=f5e610]:
+                          - generic [ref=f5e611]: "30.13"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e612]
+                      - row "18 17 2398195 5.34 28.26 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e613]:
+                        - gridcell "18" [ref=f5e614]:
+                          - generic [ref=f5e615]: "18"
+                        - gridcell "17" [ref=f5e616]:
+                          - generic [ref=f5e617]: "17"
+                        - gridcell "2398195" [ref=f5e618]:
+                          - generic [ref=f5e619]: "2398195"
+                        - gridcell "5.34" [ref=f5e620]:
+                          - generic [ref=f5e621]: "5.34"
+                        - gridcell "28.26" [ref=f5e622]:
+                          - generic [ref=f5e623]: "28.26"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e624]
+                      - row "19 18 2543206 4.97 26.66 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e625]:
+                        - gridcell "19" [ref=f5e626]:
+                          - generic [ref=f5e627]: "19"
+                        - gridcell "18" [ref=f5e628]:
+                          - generic [ref=f5e629]: "18"
+                        - gridcell "2543206" [ref=f5e630]:
+                          - generic [ref=f5e631]: "2543206"
+                        - gridcell "4.97" [ref=f5e632]:
+                          - generic [ref=f5e633]: "4.97"
+                        - gridcell "26.66" [ref=f5e634]:
+                          - generic [ref=f5e635]: "26.66"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e636]
+                      - row "20 19 2233573 5.04 26.70 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e637]:
+                        - gridcell "20" [ref=f5e638]:
+                          - generic [ref=f5e639]: "20"
+                        - gridcell "19" [ref=f5e640]:
+                          - generic [ref=f5e641]: "19"
+                        - gridcell "2233573" [ref=f5e642]:
+                          - generic [ref=f5e643]: "2233573"
+                        - gridcell "5.04" [ref=f5e644]:
+                          - generic [ref=f5e645]: "5.04"
+                        - gridcell "26.70" [ref=f5e646]:
+                          - generic [ref=f5e647]: "26.70"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e648]
+                      - row "21 20 2048057 5.61 26.31 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e649]:
+                        - gridcell "21" [ref=f5e650]:
+                          - generic [ref=f5e651]: "21"
+                        - gridcell "20" [ref=f5e652]:
+                          - generic [ref=f5e653]: "20"
+                        - gridcell "2048057" [ref=f5e654]:
+                          - generic [ref=f5e655]: "2048057"
+                        - gridcell "5.61" [ref=f5e656]:
+                          - generic [ref=f5e657]: "5.61"
+                        - gridcell "26.31" [ref=f5e658]:
+                          - generic [ref=f5e659]: "26.31"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e660]
+                      - row "22 21 2087435 4.74 26.37 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e661]:
+                        - gridcell "22" [ref=f5e662]:
+                          - generic [ref=f5e663]: "22"
+                        - gridcell "21" [ref=f5e664]:
+                          - generic [ref=f5e665]: "21"
+                        - gridcell "2087435" [ref=f5e666]:
+                          - generic [ref=f5e667]: "2087435"
+                        - gridcell "4.74" [ref=f5e668]:
+                          - generic [ref=f5e669]: "4.74"
+                        - gridcell "26.37" [ref=f5e670]:
+                          - generic [ref=f5e671]: "26.37"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e672]
+                      - row "23 22 1941504 5.13 26.61 Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e673]:
+                        - gridcell "23" [ref=f5e674]:
+                          - generic [ref=f5e675]: "23"
+                        - gridcell "22" [ref=f5e676]:
+                          - generic [ref=f5e677]: "22"
+                        - gridcell "1941504" [ref=f5e678]:
+                          - generic [ref=f5e679]: "1941504"
+                        - gridcell "5.13" [ref=f5e680]:
+                          - generic [ref=f5e681]: "5.13"
+                        - gridcell "26.61" [ref=f5e682]:
+                          - generic [ref=f5e683]: "26.61"
+                        - gridcell "Bronx, Brooklyn, EWR, Manhattan, Queens, Staten Island" [ref=f5e684]
+          - generic [ref=f5e290]:
+            - generic [ref=f5e291]: "Total rows: 24"
+            - generic [ref=f5e292]: Query complete 00:00:09.856
+            - generic [ref=f5e293]:
+              - generic "Select EOL Sequence" [ref=f5e295] [cursor=pointer]: LF
+              - generic [ref=f5e296]: Ln 14, Col 17

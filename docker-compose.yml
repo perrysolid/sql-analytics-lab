@@ -1,0 +1,87 @@
+services:
+  postgres:
+    build:
+      context: .
+      dockerfile: postgres/docker/Dockerfile.postgres
+    container_name: sql-playground-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-playground}
+      POSTGRES_USER: ${POSTGRES_USER:-admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-admin123}
+      INIT_LOAD_ALL_DATA: ${INIT_LOAD_ALL_DATA:-true}
+      DATA_CHUNK_SIZE: ${DATA_CHUNK_SIZE:-10000}
+      BACKFILL_MONTHS: ${BACKFILL_MONTHS}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres/sql-scripts:/sql-scripts
+      - ./postgres/logs:/postgres/logs
+      - ./postgres/data:/postgres/data
+    networks:
+      - sql-playground-network
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: sql-playground-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@admin.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin123}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "${PGADMIN_PORT:-8080}:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - sql-playground-network
+    depends_on:
+      - postgres
+
+  superset:
+    build:
+      context: .
+      dockerfile: superset/docker/Dockerfile.superset
+    container_name: sql-playground-superset
+    restart: unless-stopped
+    environment:
+      SUPERSET_CONFIG_PATH: /app/superset_config.py
+      PYTHONPATH: /app
+      SUPERSET_HOME: /app/superset_home
+      # Admin user configuration
+      SUPERSET_ADMIN_USER: ${SUPERSET_ADMIN_USER:-admin}
+      SUPERSET_ADMIN_EMAIL: ${SUPERSET_ADMIN_EMAIL:-admin@admin.com}
+      SUPERSET_ADMIN_FIRSTNAME: ${SUPERSET_ADMIN_FIRSTNAME:-Admin}
+      SUPERSET_ADMIN_LASTNAME: ${SUPERSET_ADMIN_LASTNAME:-User}
+      SUPERSET_ADMIN_PASSWORD: ${SUPERSET_ADMIN_PASSWORD:-admin123}
+      SUPERSET_LOAD_EXAMPLES: ${SUPERSET_LOAD_EXAMPLES:-false}
+    ports:
+      - "${SUPERSET_PORT:-8088}:8088"
+    volumes:
+      - superset_data:/app/superset_home
+      - ./superset/config/superset_config.py:/app/superset_config.py
+      - ./superset/logs:/app/logs
+      - ./superset/docker/init-superset.sh:/app/init-superset.sh
+    networks:
+      - sql-playground-network
+    # No Redis dependency - using SQLite-based caching
+    command: >
+      bash -c "
+      export SUPERSET_LOG_FILENAME=log_$(date +%Y%m%d_%H%M%S).log &&
+      /app/init-superset.sh &&
+      gunicorn --bind 0.0.0.0:8088 --workers 4 --timeout 300 'superset.app:create_app()'
+      "
+
+
+volumes:
+  postgres_data:
+    driver: local
+  pgadmin_data:
+    driver: local
+  superset_data:
+    driver: local
+
+networks:
+  sql-playground-network:
+    driver: bridge
