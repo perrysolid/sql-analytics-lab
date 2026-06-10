@@ -99,6 +99,14 @@ For a stronger interview demo, use the ready-made queries in:
 
 - `sql/01_schema_and_quality.sql`
 - `sql/02_interview_analysis_queries.sql`
+- `sql/03_data_quality_checks.sql`
+
+## Interview Assets
+
+- `docs/interview_notes.md`: short answers and project pitch.
+- `docs/demo_walkthrough.md`: step-by-step demo flow.
+- `docs/data_contract.md`: table contract and quality rules.
+- `docs/future_enhancements.md`: realistic production next steps.
 
 ## Interview Pitch
 
