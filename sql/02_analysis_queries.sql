@@ -1,4 +1,4 @@
--- Interview-friendly analysis queries for the Amazon books pipeline.
+-- Analysis queries for the Amazon books pipeline.
 -- These are designed to be run in pgAdmin after the DAG loads data.
 
 -- 1. Catalog health snapshot.
