@@ -25,17 +25,18 @@ An Airflow ETL project that extracts Amazon book search results, transforms text
 │       ├── transform.py               # Deduplication and data cleaning
 │       ├── load.py                    # PostgreSQL upsert logic
 │       └── sql_queries.py             # DDL, DQ, and analytics SQL
-├── docs/
-│   └── interview_notes.md             # Short prep notes and talking points
 ├── images/
 │   └── pipeline_design.png            # Architecture diagram
 ├── sql/
 │   ├── 01_schema_and_quality.sql      # Table, indexes, views, and DQ checks
-│   └── 02_interview_analysis_queries.sql
+│   ├── 02_interview_analysis_queries.sql
+│   └── 03_data_quality_checks.sql
 ├── docker-compose.yaml                # Local Airflow stack
-├── requirements.txt                   # Python dependencies used during local development
+├── requirements.txt                   # Python dependencies used by the DAG code
 └── .env.example                       # Local Airflow environment example
 ```
+
+`dags/app.py` is intentionally kept as the DAG entrypoint. Airflow scans files in the `dags/` folder and discovers the `fetch_and_store_amazon_books` DAG from this file, while the actual extract, transform, load, and SQL logic lives in focused modules under `dags/amazon_books_pipeline/`.
 
 ## Pipeline Flow
 
@@ -101,19 +102,6 @@ For a stronger interview demo, use the ready-made queries in:
 - `sql/02_interview_analysis_queries.sql`
 - `sql/03_data_quality_checks.sql`
 
-## Interview Assets
-
-- `docs/interview_notes.md`: short answers and project pitch.
-- `docs/demo_walkthrough.md`: step-by-step demo flow.
-- `docs/data_contract.md`: table contract and quality rules.
-- `docs/future_enhancements.md`: realistic production next steps.
-
 ## Interview Pitch
 
 This project is a small but complete batch ETL pipeline. Airflow schedules and monitors the workflow, Python extracts and cleans semi-structured HTML data, and PostgreSQL stores curated records for analysis. I improved the original pipeline by splitting extract, transform, and load into separate modules, then adding idempotent upserts, typed analytical columns, metadata, quality checks, indexes, and reusable SQL views.
-
-## Original Learning Reference
-
-Video walkthrough used by the original project:
-
-https://www.youtube.com/watch?v=3xyoM28B40Y
